@@ -63,7 +63,9 @@ participating country of the ninth round of the ESS. The columns
 country around year 2018.
 
 The codebook for this file will consider the following fields:  
-\- **Variable name**: name of the column in the file (e.g: `gini`).  
+\- **Variable name**: name of the column in the file (e.g: `gini`). This
+names should meet criteria that makes them valid variable names in R,
+Stata and SPSS: always lowercase letters.  
 \- **Full name of measurement**: descriptive name of the measurement
 (e.g: ‘Gini coefficient of equivalised disposable income’).  
 \- **Description of measurement**: a clear short description of the
@@ -87,8 +89,32 @@ that are not stated in the above fields.
 
 ### Regional level data
 
+## Project workflow
+
+The workflow is
+
+The recollection and documentation of the supplementary data should
+differentiate between two roles: *retriever* - someone who finds
+relevant data, structure it in a data file and documents it according to
+the standards - and; *curator* - someone who checks the collected data
+and the corresponding source and documentation -.
+
+### 1\. Define
+
+The first stage implies a process defining the required data
+
+### 2\. Retrieve
+
+### 3\. Document
+
+### 4\. Curate
+
+### 5\. Publish
+
 ## Data merging
 
-Considering that researcher analyse data in multiple softwarees,
+Easy-to-implement routines for merging the supplementary data with the
+latest dataset of the ESS round 9 will be developed for the main
+softwares used in social sciences: R, Stata and SPSS.
 
 Command files will be produced for different softwares to
