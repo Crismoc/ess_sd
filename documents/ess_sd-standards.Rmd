@@ -30,7 +30,7 @@ Data sources for this project will comprise any of those which meet the followin
 
 The project workflow is presented in the figure below. It implies a five-step process that can be iterated as needed for a complete compilation of supplementary data. The dashed line represents the possibility to iterate as needed after certain data has gone through steps 1 to 3. Along steps 2 to 4 two roles should be differentiated: *retriever*, someone who finds relevant data, structure it in a data file and documents it according to the standards and; *curator*, someone who checks the collected data and the corresponding source and documentation. For any indicator or measure, these roles must be assigned to different persons.
 
-![wokflow](https://github.com/Crismoc/ess-sd/command-files/workflow.png)
+![workflow](command-files/workflow.png)
 
 ### 1. Define
 
