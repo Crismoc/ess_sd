@@ -7,7 +7,7 @@ The European Social Survey Supplementary Data project (ESS-SD) aims to
 collect, process, document and publish contextual data to be used in the
 analysis of the ninth round of the ESS. This data will be made publicly
 available for its use by analysts totally free of charge and without
-permission needed (CC-BY license for data and CC0 for metada),
+permission needed (CC-BY license for data and CC0 for metadata),
 considering a complete documentation.
 
 The production process follows the guidelines proposed by the [TIER
@@ -42,10 +42,65 @@ following criteria:
 
   - The data is openly reusable (neither permission should be required
     nor payment must be made)
+
   - The data covers all or almost all of the countries participating in
-    the ESS round 9.
-  - The data fits into one of the following areas of indicators:
-    economical, political, social,
+    the ESS round 9 for year 2018 ideally, or years 2016 or 2017
+    otherwise.
+
+## Project workflow
+
+The project workflow is presented in the figure below. It implies a
+five-step process that can be iterated as needed for a complete
+compilation of supplementary data. The dashed line represents the
+possibility to iterate as needed after certain data has gone through
+steps 1 to 3. Along steps 2 to 4 two roles should be differentiated:
+*retriever*, someone who finds relevant data, structure it in a data
+file and documents it according to the standards and; *curator*, someone
+who checks the collected data and the corresponding source and
+documentation. For any indicator or measure, these roles must be
+assigned to different persons.
+
+![wokflow](C:/Users/cristobal.moya/Documents/ess_sd/command-files/workflow.png)
+
+### 1\. Define
+
+The first stage implies a process defining the required data.
+
+  - DEFINE CRITERIA FOR CHOOSING SUPDATA
+  - SHORT SURVEY TO PIJE RESEARCHERS?
+
+### 2\. Retrieve
+
+The retrieval process consists of finding the required data in one or
+more sources, checking its availability for all of the ESS countries
+within the defined time frame and saving it on the project repository.
+
+### 3\. Document
+
+Documenting the data implies adding the information specified in the
+[Data structure](#data-structure) in a command file that will produce
+the final data codebook (e.g., the [`codebook` R
+package](https://cran.r-project.org/web/packages/codebook/index.html)).
+
+### 4\. Curate
+
+Curating the data consists of checking the documentation and data saved
+in steps 2 & 3, considering alternative sources containing the same
+data. This process requires both checking the actual values saved, as
+well as the completeness of the information in the codebook.
+
+### 5\. Publish
+
+The publishing step has two sub-components:
+
+  - The produced data objects should be documented, considering the
+    addition of metadata also to the dataset, in order to upload them to
+    open repositories.
+
+  - The whole process should be documented in a methodological report,
+    describing the file objects produced and their codebooks, as well as
+    providing concrete examples of how to use the ESS supplementary data
+    with mainstream softwares.
 
 ## Data structure
 
@@ -53,7 +108,7 @@ Two rectangular data objects will be produced in separate files: one for
 country level data, and another considering regional data (probably at
 more than one level, e.g., NUTS-1 and NUTS-2). The output data files
 will be structured in a format easy to read for multiple software, e.g.,
-comma-separated values files, encoded in UTF-8.
+comma delimited files, encoded in UTF-8.
 
 ### Country level data
 
@@ -89,32 +144,10 @@ that are not stated in the above fields.
 
 ### Regional level data
 
-## Project workflow
-
-The workflow is
-
-The recollection and documentation of the supplementary data should
-differentiate between two roles: *retriever* - someone who finds
-relevant data, structure it in a data file and documents it according to
-the standards - and; *curator* - someone who checks the collected data
-and the corresponding source and documentation -.
-
-### 1\. Define
-
-The first stage implies a process defining the required data
-
-### 2\. Retrieve
-
-### 3\. Document
-
-### 4\. Curate
-
-### 5\. Publish
-
 ## Data merging
 
 Easy-to-implement routines for merging the supplementary data with the
 latest dataset of the ESS round 9 will be developed for the main
-softwares used in social sciences: R, Stata and SPSS.
-
-Command files will be produced for different softwares to
+softwares used in social sciences: R, Stata and SPSS. Command files will
+be produced for each of them to facilitate joining the supplementary
+data into the ESS main data file.
