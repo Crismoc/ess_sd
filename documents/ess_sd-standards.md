@@ -60,7 +60,7 @@ who checks the collected data and the corresponding source and
 documentation. For any indicator or measure, these roles must be
 assigned to different persons.
 
-![wokflow](C:/Users/cristobal.moya/Documents/ess_sd/command-files/workflow.png)
+![workflow](https://github.com/Crismoc/ess_sd/blob/master/command-files/workflow.png)
 
 ### 1\. Define
 
@@ -117,12 +117,12 @@ participating country of the ninth round of the ESS. The columns
 (variables) will correspond to measurements or indicators for each
 country around year 2018.
 
-The codebook for this file will consider the following fields:  
+The codebook for this file will consider the following fields:
 \- **Variable name**: name of the column in the file (e.g: `gini`). This
 names should meet criteria that makes them valid variable names in R,
-Stata and SPSS: always lowercase letters.  
+Stata and SPSS: always lowercase letters.
 \- **Full name of measurement**: descriptive name of the measurement
-(e.g: ‘Gini coefficient of equivalised disposable income’).  
+(e.g: ‘Gini coefficient of equivalised disposable income’).
 \- **Description of measurement**: a clear short description of the
 measurement (e.g: ‘The gini coefficient of equivalised total disposable
 income. The total disposable income of a household is calculated by
@@ -131,14 +131,14 @@ plus income received at household level. Missing income information is
 imputed. Disposable household income includes: all income from work
 (employee wages and self-employment earnings); private income from
 investment and property; transfers between households; all social
-transfers received in cash including old-age pensions’).  
+transfers received in cash including old-age pensions’).
 \- **Source of measurement**: original source where the data was
 collected, considering the url for the website where the data was
 retrieved (e.g: ‘Eurostat,
-<https://ec.europa.eu/eurostat/data/database>’).  
+<https://ec.europa.eu/eurostat/data/database>’).
 \- **Year**: The year for which the measurement is calculated, stating
 exceptions for countries in case there are (e.g: ‘2017 for all
-countries, except for Albania (2016), and Slovakia (2018)’).  
+countries, except for Albania (2016), and Slovakia (2018)’).
 \- **Notes**: if necessary, relevant remarks regarding the measurements
 that are not stated in the above fields.
 
